@@ -586,7 +586,7 @@ namespace xwcs.indesign
         private void DoPing()
         {
 #if DEBUG_TRACE_LOG_ON
-            _logger.Debug("Ping: {0}", _PingCounter);
+            _logger.Debug($"Ping: {_PingCounter}");
 #endif
 
             int taskid = (int)(ExecScriptInternal(_app, "CsBridge.runAsync(CsBridge.ping);", new object[] { }) ?? -1);

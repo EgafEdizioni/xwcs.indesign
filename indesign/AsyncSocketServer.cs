@@ -99,7 +99,7 @@ namespace xwcs.indesign
             _listener.Start();
             try
             {
-                _logger.Debug("Service is now running on port :{0}", this.port);
+                _logger.Debug($"Service is now running on port :{this.port}");
                 while (true)
                 {
                     try
@@ -117,7 +117,7 @@ namespace xwcs.indesign
             finally
             {
                 _listener.Stop();
-                _logger.Debug("Service on port :{0} Stopped!", this.port);
+                _logger.Debug($"Service on port :{this.port} Stopped!");
             }
         }
 
